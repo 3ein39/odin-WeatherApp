@@ -30,6 +30,17 @@ input.location-input {
     padding: 8px;
 }
 
+.weather-sunny {
+    background-color: #f8d100; /* Yellow background */
+    color: #333; /* Black text */
+}
+
+/* Styles for Rainy weather */
+.weather-rainy {
+    background-color: #0078d4; /* Blue background */
+    color: #fff; /* White text */
+}
+
 button.location-button {
     background-color: #007bff;
     color: #fff;

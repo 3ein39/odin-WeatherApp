@@ -4,6 +4,7 @@ let location_header = document.getElementById('location');
 let temp_p = document.getElementById('temperature');
 let condition_p = document.getElementById('condition');
 let humidty_p = document.getElementById('humidity');
+let body = document.querySelector('body');
 
 btn.addEventListener('click',async (e) => {
     let location = document.querySelector('input').value;
@@ -13,6 +14,16 @@ btn.addEventListener('click',async (e) => {
     temp_p.innerText = data.current.temp_c;
     condition_p.innerText = data.current.condition.text;
     humidty_p.innerText = data.current.humidity;
+
+    // Clear any previous weather condition styles
+    body.classList.remove('weather-sunny', 'weather-rainy'); // Add more classes for other conditions
+
+    // Apply styles based on the weather condition
+    if (data.current.condition.text.toLowerCase().includes('sunny')) {
+        body.classList.add('weather-sunny');
+    } else if (data.current.condition.text.toLowerCase().includes('rain')) {
+        body.classList.add('weather-rainy');
+    }
 
 })
 let getWeatherData = async function(location) {
