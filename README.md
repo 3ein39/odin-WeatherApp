@@ -25,7 +25,7 @@ WeatherApp is a simple web application that allows users to check the current we
 2. Click the "Get Weather" button.
 3. The app will display the current weather data for the specified location, and the background color will change based on the weather condition.
 
-// ### Live Preview 
+### [Live Preview] (https://3ein39.github.io/odin-WeatherApp/)
 
 ## Contributing
 
