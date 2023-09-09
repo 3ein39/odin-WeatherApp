@@ -5,8 +5,10 @@ body {
 }
 
 .weather-container {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -17,10 +19,15 @@ h1 {
     font-size: 24px;
 }
 
+.row {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
 input.location-input {
-    width: 100%;
+    width: 60%;
     padding: 8px;
-    margin-bottom: 10px;
 }
 
 button.location-button {
