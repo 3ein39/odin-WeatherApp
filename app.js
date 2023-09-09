@@ -29,7 +29,9 @@ btn.addEventListener('click',async (e) => {
 let getWeatherData = async function(location) {
     try {
 
-        let result = await fetch(`http://api.weatherapi.com/v1/current.json?key=47b055d4faf8406fb7f152406230809&q=${location}`);
+        let result = await fetch(`https://api.weatherapi.com/v1/current.json?key=47b055d4faf8406fb7f152406230809&q=${location}`, {
+
+        });
 
         return await result.json();
     }
